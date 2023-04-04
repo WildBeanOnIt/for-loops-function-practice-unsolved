@@ -4,7 +4,14 @@
 
 export function getNumbersWithSquareRoots(max) {
   // Your code goes here...
+  const retArr = [];
 
+  for (let i = 0; i < max; i++) {
+    const answer = i * i;
+    if (answer > max) {
+      return retArr;
+    } else retArr.push(answer);
+  }
 }
 
 // === TEST YOURSELF ===
