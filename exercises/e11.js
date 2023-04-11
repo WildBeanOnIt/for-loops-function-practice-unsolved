@@ -3,10 +3,21 @@
 // If the account doesn't have withdrawals, it's sum is 0.
 // Array example: bankAccounts in /data/data.js
 // getAllWithdrawals(bankAccounts) => [3432, 0, 43242.34, 0, 23432]
-
 export function getAllWithdrawals(array) {
   // Your code goes here...
-
+  const retArr = [];
+  for (const accounts of array) {
+    let sum = 0;
+    if (accounts.withdrawals) {
+      for (const number of accounts.withdrawals) {
+        sum += number;
+      }
+      retArr.push(sum);
+    } else {
+      retArr.push(0);
+    }
+  }
+  return retArr;
 }
 
 // === TEST YOURSELF ===
