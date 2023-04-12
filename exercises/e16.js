@@ -11,7 +11,6 @@ export function flatArrays(array) {
     for (const secRun of firstRun) {
       retArr.push(secRun);
     }
-    // retArr.push(firstArr)
   }
   return retArr;
 }
