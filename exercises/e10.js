@@ -5,8 +5,6 @@
 
 export function getClientsWithLetterInName(array, letter) {
   // Your code goes here...
-  // const retArr = [];
-  // const letter = ["A", "a", "c", "C", "P", "p"];
   const retArrNames = [];
   for (const accounts of array) {
     const accountsName = accounts.name;
