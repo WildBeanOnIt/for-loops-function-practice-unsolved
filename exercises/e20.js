@@ -13,7 +13,7 @@ export function separateNamesWithAFromRest(array) {
   for (const name of array) {
     let hasA = false;
     for (const letter of name) {
-      if ("a" == letter) {
+      if (letter == "a") {
         hasA = true;
       }
     }
